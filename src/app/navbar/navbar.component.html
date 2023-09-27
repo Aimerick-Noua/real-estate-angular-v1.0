@@ -1,0 +1,39 @@
+ <!-- Barre de navigation Début -->
+ <div class="container-fluid nav-bar bg-transparent p-4">
+  <nav class="navbar navbar-expand-lg bg-light navbar-light py-0 p-4">
+      <a routerLink="/homePage" class="navbar-brand d-flex align-items-center text-center">
+          <div class="icon p-2 me-2">
+              <img class="img-fluid" src="assets/estate/img/icon-deal.png" alt="Icône" style="width: 30px; height: 30px;">
+          </div>
+          <h1 class="m-0 text-primary p-2">Makaan</h1>
+      </a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon p-2"></span>
+      </button>
+      <div class="collapse navbar-collapse p-2" id="navbarCollapse">
+          <div class="navbar-nav ms-auto">
+              <a href="./homePage" class="nav-item nav-link">Accueil</a>
+              <a href="about.html" class="nav-item nav-link">À Propos</a>
+              <div class="nav-item dropdown">
+                  <a href="./home" class="nav-link">Nos Terrains</a>
+
+              </div>
+              <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                  <div class="dropdown-menu rounded-0 m-0">
+                      <a href="testimonial.html" class="dropdown-item">Témoignages</a>
+                      <a href="404.html" class="dropdown-item">Erreur 404</a>
+                  </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+              <a href="./admins/dashb" class="nav-item nav-link" *ngIf="roleName=='Admin'">Page Administrative</a>
+
+          </div>
+          <form class="form-inline my-2 my-lg-0">
+            <button *ngIf="!isLoggedIn()" type="button" class="btn btn-success mr-2" routerLink="/signin">Connexion</button>
+            <button *ngIf="isLoggedIn()"type="button" class="btn btn-danger" (click)="logout()">Déconnexion</button>
+          </form>
+      </div>
+  </nav>
+</div>
+<!-- Barre de navigation Fin -->

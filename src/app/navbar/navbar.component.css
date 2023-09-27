@@ -1,0 +1,19 @@
+.btn{
+    height: 30px;
+    font-size: 80%;
+}
+.logo{
+border-radius: 50%;
+}
+.navbaring{
+  border-bottom: 2px solid rgb(128, 128, 128);
+}
+.bg-primary {
+  background-color: #00B98E !important;
+}
+.text-primary{
+color: #00B98E !important;
+}
+.bg-new{
+  background-color: #0E2E50;
+}

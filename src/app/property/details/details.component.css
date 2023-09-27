@@ -1,0 +1,45 @@
+.details{
+   background-color: rgb(37, 27, 91);
+   color: white;
+    
+}
+
+.flexing{
+  display: inline-flex;
+  width: 100%;
+}
+.t1{
+  width: 100%;
+  border: 4px solid seashell;
+  height: 650px;
+  contain: strict;
+  
+}
+.t2{
+width: 30%;
+border: 1px solid seashell;
+height: 650px;
+
+}
+.down{
+  height: 400px;
+  margin: 5%;
+  padding: 3%;
+}
+.property-zoom{
+  max-width: 200%;
+  max-height: 200%;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  margin: auto;
+}
+.bg-details{
+  background-color: #0E2E50;
+}
+.btn-primary{
+  background-color: #00B98E;
+  border:none
+}
